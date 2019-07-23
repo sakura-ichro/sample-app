@@ -20,13 +20,15 @@ $ yarn install
 
 ``` bash
 # 開発用サーバの起動
-$ yarn run dev
+$ yarn dev
 
 # 静的ビルド
-$ yarn run gen
+$ yarn gen
 
 # 公開
 $ yarn deploy
 ```
 
+開発用サーバはPort3333で起動します   
+重複している場合はnuxt.configから設定してください   
 詳しくはpackage.jsonを参照

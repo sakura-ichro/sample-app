@@ -1,14 +1,13 @@
 <template lang="pug">
 .vce-print
   .vce-print-edit
-    //- .title.is-3.has-text-centered 交通費請求フォーム
+    .title.is-3.has-text-centered 交通費請求フォーム
 
     .columns
       .column.is-4
         label.label 氏名
         input.input(v-model="form.name")
       .column.is-4
-        //- label.label 所属セクション
         label.label 所属
         input.input(v-model="form.section")
 
