@@ -1,0 +1,94 @@
+.c-modal
+  position: relative
+
+  &__wrap
+    padding: 10px
+
+  .modal
+    z-index: 65000
+
+  &__table
+    border-top: 1px solid $grey-lighter
+    border-bottom: 1px solid $grey-lighter
+    // margin-bottom: 25px
+
+    &.is-borderless
+      border: none
+
+    table.table
+      tr
+        th, td
+          vertical-align: middle
+          // padding: 10px 0
+          padding-top: 15px
+          padding-bottom: 15px
+
+  &__table-card
+      border-top: 1px solid $grey-lighter
+      border-bottom: 1px solid $grey-lighter
+
+      &.is-borderless
+        border: none
+
+      table.table
+        tr
+          th, td
+            vertical-align: middle
+            padding-top: 15px
+            padding-bottom: 15px
+
+  &__checkradio
+    display: flex
+    flex-wrap: wrap
+    margin-top: -8px
+
+    > *
+      margin: 0
+      margin-right: 1rem
+      margin-top: 0.75rem
+
+      &:not(:last-child)
+        margin-bottom: 0
+
+  &__checkradio-tile
+    display: flex
+    flex-wrap: wrap
+    padding-top: 0.5rem
+    box-sizing: border-box
+
+    > *
+      +tile(24, 14)
+      &:not(:last-child)
+        margin-bottom: 0
+
+  &__scroll
+    // window - (モーダルUIサイズ + padding)
+    // $modal_ui_size: (65+90+40+40) * 1px
+    // height: calc(100vh - 235px)
+    max-height: calc(100vh - 235px)
+    overflow-y: auto
+    overflow-x: hidden
+    box-sizing: border-box
+
+  &__center
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  &__btns
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    width: 100%
+
+    .button
+      width: 160px
+      margin-right: 10px
+      margin-left: 10px
+
+
+  &__datepicker
+    .vdp-datepicker
+      &__calendar
+        position: fixed

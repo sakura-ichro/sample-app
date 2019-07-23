@@ -1,0 +1,17 @@
+.c-tile
+  display: flex
+  flex-wrap: wrap
+
+  =set-tile($n)
+    &.is-#{$n}
+      > *
+        +tile($n, 15)
+
+  +set-tile(6)
+  +set-tile(12)
+  +set-tile(18)
+  +set-tile(24)
+  +set-tile(30)
+  +set-tile(36)
+  +set-tile(42)
+  +set-tile(48)

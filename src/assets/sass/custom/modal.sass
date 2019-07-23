@@ -1,0 +1,23 @@
+.modal
+  .modal-background
+    background-color: rgba(#000, 0.4)
+  .modal-content,
+  .modal-card,
+  .modal-card-body
+    &.is-visible
+      overflow: visible
+
+    &.is-large
+      +mq(pc)
+        width: 900px
+
+    &.is-fullwidth
+      +mq(pc)
+        width: 90%
+
+.is-no-footer
+  .modal-card-body
+    border-radius: 0 0 6px 6px
+  .modal-card-foot
+    display: none
+

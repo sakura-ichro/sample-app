@@ -1,0 +1,10 @@
+.field
+  &.is-middle
+    align-items: center
+
+  &.is-centered
+    justify-content: center
+
+  @for $i from 1 through 20
+    &.is-#{$i}
+      +mb($i * 10)

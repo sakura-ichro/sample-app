@@ -1,0 +1,43 @@
+.c-table-form
+  +mb(30)
+
+
+  border-top: $table-cell-border
+  border-bottom: $table-cell-border
+
+  &.is-borderless
+    border: none
+
+  table.table
+    width: 100%
+    tr
+      th, td
+        vertical-align: middle
+        padding: 15px
+
+      th
+        white-space: nowrap
+        font-weight: 500
+        // min-width: 230px
+
+
+.c-table-form-inside
+  display: table
+  // width: 50%
+
+  dl
+    display: table-row
+
+    &:not(:last-child)
+      dt, dd
+        padding-bottom: 10px
+
+  dt,dd
+    display: table-cell
+    vertical-align: middle
+
+  dt
+    width: 5%
+    white-space: nowrap
+  dd
+    padding: 0 15px

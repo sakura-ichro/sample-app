@@ -1,0 +1,125 @@
+.c-checkradio
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin-top: -8px
+
+  > *
+    margin: 0
+    margin-right: 1rem
+    margin-top: 0.75rem
+
+    &:not(:last-child)
+      margin-bottom: 0
+
+    &:last-child
+      margin-right: 0
+      input.is-checkradio
+        & + label
+          margin-right: 0
+          padding-right: 0
+
+.c-checkradio-list
+  max-height: 19rem
+  overflow-x: hidden
+  overflow-y: scroll
+  padding: 5px
+
+.is-checkradio-icon
+  margin-left: 3px
+  position: relative
+  bottom: -0.1rem
+
+input.is-checkradio,
+input.switch
+  & + label
+    user-select: none
+
+.control, .field
+  position: relative
+
+  input.is-checkradio
+    display: none
+
+    &.is-no-label
+      & + label
+        width: 24px
+        height: 24px
+        margin: 0
+        padding: 0
+        display: block
+
+    &:not(:disabled) + label
+      +hover
+        color: $primary
+
+    & + label
+      position: static
+      transition-property: all
+      transition-duration: 0.1s
+      transition-timing-function: linear
+      position: relative
+      transform: scale(1)
+      span
+        display: inline-block
+        position: relative
+        top: -0.25em
+        left: 0
+
+      &:before,
+      &:after
+        transition-property: all
+        transition-duration: inherit
+        transition-timing-function: inherit
+        display: block
+
+
+      & + .icon
+        &:last-child
+          position: relative
+          bottom: -0.25em
+          left: -12px
+          // padding-left: 2px
+
+    &[type="checkbox"]
+      & + label
+        &:after
+          transform: scale(0) rotate(45deg)
+          opacity: 0
+
+        &:before
+          background-color: #fff
+
+      &:checked + label
+        &:before
+          border-color: $primary
+        &:after
+          opacity: 1
+          transform: scale(1) rotate(45deg)
+
+    &[type="radio"]
+      & + label
+        &:after
+          transform: scale(0)
+          opacity: 0
+        &:before
+          background-color: #fff
+
+      &:checked + label
+        &:before
+          border-color: $primary
+        &:after
+          opacity: 1
+          transform: scale(0.5)
+
+  input.switch
+    display: none
+
+    & + label
+      position: static
+      span
+        display: inline-block
+        position: relative
+        top: -1px
+        left: 0
+

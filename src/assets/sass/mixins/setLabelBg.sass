@@ -1,0 +1,30 @@
+=setLabelBg($bd: false)
+  &.is-info
+    background-color: mix($link, #fff, 40%)
+    @if $bd == true
+      border-color: mix($link, #fff, 80%)
+
+  &.is-info-light
+    background-color: mix($link, #fff, 15%)
+    @if $bd == true
+      border-color: mix($link, #fff, 45%)
+  &.is-success
+    background-color: mix($success, #fff, 40%)
+    @if $bd == true
+      border-color: mix($success, #fff, 80%)
+  &.is-success-light
+    background-color: mix($success, #fff, 15%)
+    @if $bd == true
+      border-color: mix($success, #fff, 45%)
+  &.is-primary
+    background-color: mix($primary, #fff, 40%)
+    @if $bd == true
+      border-color: mix($primary, #fff, 80%)
+  &.is-primary-light
+    background-color: mix($primary, #fff, 15%)
+    @if $bd == true
+      border-color: mix($primary, #fff, 45%)
+  &.is-warning
+    background-color: mix($warning, #fff, 30%)
+    @if $bd == true
+      border-color: mix($warning, #fff, 60%)

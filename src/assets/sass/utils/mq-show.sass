@@ -1,0 +1,28 @@
+@charset "utf-8"
+
+//------------------------------------------------------------
+.hide-html
+  display: none
+
+.hide-print
+  +print
+    display: none
+
+.hide-sp
+  +mq(sp)
+    display: none
+
+.hide-pc
+  +mq(pc)
+    display: none
+
+.show-pc
+  display: none
+  +mq(pc)
+    display: block
+
+.show-sp
+  display: none
+  +mq(sp)
+    display: block
+

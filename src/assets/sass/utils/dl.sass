@@ -1,0 +1,114 @@
+.c-dl
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  width: 100%
+
+  > *
+    &:not(:last-child)
+      margin-right: 10px
+
+.c-dl-group
+  display: flex
+  flex-wrap: wrap
+  +mb(30)
+
+  .c-dl-table
+    margin-bottom: 0
+
+  >
+    dl
+      dt
+        font-weight: bold
+
+  > *
+    &.is-3
+      +tile(25, 20)
+
+    &.is-4
+      +tile(33, 20)
+
+    &.is-6
+      +tile(50, 20)
+
+    &.is-12
+      width: 100%
+      margin-top: 30px
+
+.c-dl-table
+  display: table
+  width: 100%
+  +mb(15)
+
+  dl
+    display: table-row
+
+  &.is-bordered
+    dl
+      dt,dd
+        border-bottom: $table-cell-border
+        padding-bottom: 0.5rem
+        padding-top: 0.5rem
+
+      &:first-child
+        dt,dd
+          padding-top: 0
+
+      &:last-child
+        dt,dd
+          border-bottom: 0
+          padding-bottom: 0
+
+  dt, dd
+    display: table-cell
+    vertical-align: middle
+
+  dt
+    width: 10px
+    padding-right: 1em
+    white-space: nowrap
+
+    label
+      font-weight: 500
+      &:after
+        content: ':'
+        display: inline-block
+        padding-left: 3px
+
+.c-dl-form
+  display: flex
+  flex-wrap: wrap
+  margin-top: -15px
+  +mb(30)
+
+  > dl
+    +tile(48.5, 0)
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    border-bottom: $table-cell-border
+
+    &.is-fullwidth
+      width: 100%
+      margin: 0
+
+    > dt, > dd
+      padding: 15px 10px
+
+    > dt
+      min-width: 150px
+      font-weight: 500
+
+    > dd
+      flex: 1 1 0%
+
+  .c-checkradio
+    .is-checkradio + label
+      span
+        top: -0.3em
+
+  .select
+    width: 100%
+    select
+      display: block
+      width: 100%

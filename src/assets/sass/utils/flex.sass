@@ -1,0 +1,46 @@
+.c-flex
+  display: flex
+  // flex-wrap: wrap
+  // align-items: center
+  width: 100%
+  +mb(15)
+
+  &.is-wrap
+    flex-wrap: wrap
+    margin-top: -15px
+
+    > *
+      margin-top: 15px
+
+  &.is-middle
+    align-items: center
+
+  > *
+    &:not(:last-child)
+      margin-right: 30px
+
+  @for $i from 1 through 20
+    &.is-margin-#{$i}
+      > *
+        &:not(:last-child)
+          margin-right: $i * 10px
+
+.c-flex-between
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  margin-top: -10px
+
+  &.is-flexend
+    align-items: flex-end
+
+  > *
+    margin-top: 10px
+
+.c-flex-center
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  justify-content: center
+
