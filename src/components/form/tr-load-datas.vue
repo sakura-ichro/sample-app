@@ -36,9 +36,6 @@ tr.is-middle(v-else)
 
 </template>
 <script>
-// import _ from 'lodash'
-// import uuid from 'uuid'
-// import moment from 'moment'
 import sleep from 'sleep-promise'
 import { mapState, mapMutations } from 'vuex'
 

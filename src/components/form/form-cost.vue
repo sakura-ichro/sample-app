@@ -62,29 +62,10 @@ export default {
     form: null,
     uid: null
   },
-  // data() {
-  //   return {
-  //     form: {
-  //       date: null,
-  //       name: null,
-  //       start_spot: null,
-  //       end_spot: null,
-  //       roundtrip: [],
-  //       notes: null,
-  //       price: 0,
-  //     }
-  //   }
-  // },
   methods: {
     deleteData() {
       if ( confirm('項目を削除しますか?') ) {
-        // this.$parent.tables = _.filter(
-        //   this.$parent.tables, i => i !== this.uid
-        // )
         this.$parent.updateTable(this.uid)
-        // this.form = _.filter(
-        //   this.form, i => i !== this.uid
-        // )
       }
     }
   }
