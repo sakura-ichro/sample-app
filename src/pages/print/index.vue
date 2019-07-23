@@ -324,5 +324,5 @@ export default {
 
 
 <style lang="sass" scoped>
-@import './print.sass'
+@import './print-index.sass'
 </style>
