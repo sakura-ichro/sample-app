@@ -65,7 +65,6 @@ module.exports = {
 
   // Build configuration
   build: {
-
     extractCSS: true,
     postcss: {
       preset: {
@@ -89,5 +88,10 @@ module.exports = {
         })
       }
     }
+  },
+
+  router: {
+    // mode: 'hash',
+    base: '/sample-app/',
   },
 }
