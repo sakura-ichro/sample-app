@@ -2,7 +2,7 @@
   "name": "nuxt2-app",
   "version": "1.0.0",
   "description": "My geometric Nuxt.js project",
-  "author": "john",
+  "author": "sakura-ichro",
   "private": true,
   "scripts": {
     "dev": "nuxt",
