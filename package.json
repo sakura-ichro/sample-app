@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "git": "git add . && git commit -a -m 'deploy commit'",
+    "git.msg": "git add . && git commit -a -m $M",
     "deploy": "git ftp push -k",
     "ghpage": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },

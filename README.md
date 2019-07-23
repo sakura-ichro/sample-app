@@ -1,22 +1,29 @@
-# nuxt2-app
+# sample-app
 
-> My geometric Nuxt.js project
+https://sakura-ichro.github.io/sample-app/
 
-## Build Setup
+## 前提
 
 ``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
+> node -v
+8.11.4
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## セットアップ
+
+``` bash
+# 依存パッケージインストール
+yarn install
+```
+
+## 主なコマンド
+
+``` bash
+# 開発用サーバの起動
+$ yarn run dev
+
+# 静的ビルド
+$ yarn run gen
+```
+
+詳しくはpackage.jsonを参照
