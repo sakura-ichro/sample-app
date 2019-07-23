@@ -5,7 +5,7 @@ https://sakura-ichro.github.io/sample-app/
 ## 前提
 
 ``` bash
-> node -v
+$ node -v
 8.11.4
 ```
 
@@ -13,7 +13,7 @@ https://sakura-ichro.github.io/sample-app/
 
 ``` bash
 # 依存パッケージインストール
-yarn install
+$ yarn install
 ```
 
 ## 主なコマンド
@@ -24,6 +24,9 @@ $ yarn run dev
 
 # 静的ビルド
 $ yarn run gen
+
+# 公開
+$ yarn deploy
 ```
 
 詳しくはpackage.jsonを参照

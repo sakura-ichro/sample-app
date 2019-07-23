@@ -14,8 +14,7 @@
     "precommit": "npm run lint",
     "git": "git add . && git commit -a -m 'deploy commit'",
     "git.msg": "git add . && git commit -a -m $M",
-    "deploy": "git ftp push -k",
-    "ghpage": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
