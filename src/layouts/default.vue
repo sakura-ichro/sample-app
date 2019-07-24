@@ -23,8 +23,9 @@ export default {
   data() {
     return {
       menus: [
-        {id: 'index', name: 'スプレッドシート連携'},
-        {id: 'print', name: '帳票サンプル'},
+        {id: 'index', name: 'スプレッドシート'},
+        {id: 'print', name: '帳票'},
+        {id: 'chart', name: 'チャート'},
       ]
     }
   },

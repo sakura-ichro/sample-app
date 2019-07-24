@@ -1,5 +1,7 @@
 <template lang='pug'>
 div
+  .title.is-3.has-text-centered アレルギー一覧
+
   transition(name="fade")
     table.table.is-fullwidth.is-bordered.is-striped(
       v-if="allergies.length"
