@@ -57,18 +57,21 @@ export default {
         labels: this.setLabels(),
         datasets: [
           {
-            label: '身長',
-            borderColor: this.rgba('primary', 0.8),
-            backgroundColor: this.rgba('primary', 0.3),
-            // fill: false,
-            data: this.randomHeight(),
-          }, {
             label: '体重',
             borderColor: this.rgba('info', 0.8),
             backgroundColor: this.rgba('info', 0.3),
             // fill: false,
+            yAxisID: 'y-axis-weight',
             data: this.randomWeight(),
-          }
+          },
+          {
+            label: '身長',
+            borderColor: this.rgba('primary', 0.8),
+            backgroundColor: this.rgba('primary', 0.3),
+            // fill: false,
+            yAxisID: 'y-axis-height',
+            data: this.randomHeight(),
+          },
         ]
       }
 
@@ -103,14 +106,14 @@ export default {
     randomHeight () {
       let arr = []
       _.times(12, () => {
-        arr.push(_.random(5, 100))
+        arr.push(_.random(100, 160))
       })
       return arr
     },
     randomWeight () {
       let arr = []
       _.times(12, () => {
-        arr.push(_.random(5, 50))
+        arr.push(_.random(15, 70))
       })
       return arr
     },
@@ -139,7 +142,7 @@ export default {
               type: 'linear',
               display: true,
               position: 'right',
-              id: 'y-axis-1',
+              id: 'y-axis-weight',
               ticks: {
                 beginAtZero: true,
                 min: 0,
@@ -154,7 +157,7 @@ export default {
               type: 'linear',
               display: true,
               position: 'left',
-              id: 'y-axis-2',
+              id: 'y-axis-height',
               ticks: {
                 beginAtZero: true,
                 min: 0,
