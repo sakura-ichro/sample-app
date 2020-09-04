@@ -45,7 +45,7 @@
     "vue-images-loaded": "^1.1.2",
     "vue-lazyload": "^1.2.6",
     "vue-markdown": "^2.2.4",
-    "vue-moment": "^4.0.0",
+    "vue-moment": "^4.1.0",
     "vuejs-datepicker": "^1.6.2"
   },
   "devDependencies": {
